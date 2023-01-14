@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EddyCalculator</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   <div class="items">
+    <form action="" name="calculator" >
+        <input type="texfield" name="label" value="" autocomplete="off" readonly id="labelP" placeholder="0"><br><br><br>
+        <center>
+        <input type="button" value="7" onclick="document.calculator.label.value+='7'">
+        <input type="button" value="8" onclick="document.calculator.label.value+='8'">
+        <input type="button" value="9" onclick="document.calculator.label.value+='9'">
+        <input type="button" value="+" onclick="document.calculator.label.value+='+'"><br>
+        <br>
+        <input type="button" value="4"  onclick="document.calculator.label.value+='4'">
+        <input type="button" value="5"  onclick="document.calculator.label.value+='5'">
+        <input type="button" value="6"  onclick="document.calculator.label.value+='6'">
+        <input type="button" value="-"  onclick="document.calculator.label.value+='-'"><br>
+        <br>
+        <input type="button" value="1"  onclick="document.calculator.label.value+='1'">
+        <input type="button" value="2"  onclick="document.calculator.label.value+='7'">
+        <input type="button" value="3"  onclick="document.calculator.label.value+='3'">
+        <input type="button" value="*"  onclick="document.calculator.label.value+='*'"><br>
+        <br>
+        <input type="button" value="0"  onclick="document.calculator.label.value+='0'">
+        <input type="reset" value="C">
+        <input type="button" value="="  onclick="document.calculator.label.value=eval(document.calculator.label.value)">
+        <input type="button" value="/"  onclick="document.calculator.label.value+='/'"><br>
+        </center>
+    </form>
+   </div> 
+</body>
+</html>
